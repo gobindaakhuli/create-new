@@ -1,0 +1,19 @@
+#Start with git
+create a project on local mechine.( $git init ) Or
+clone a project from git hub ( $git clone <http link> )
+
+change/ update/ modify on source code on local mechin with new or coned source code.
+ $git add .  //// or $git add <file name>
+
+Finalize this change
+
+$git commit -m <"commit message"> <file name>
+
+After that push this on git hub project
+$git push -u origin master
+
+Modified project will push on github project.
+
+
+
+$git status := It show the status of the local git file

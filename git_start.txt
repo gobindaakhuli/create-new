@@ -10,7 +10,7 @@ Finalize this change
 $git commit -m <"commit message"> <file name>
 
 After that push this on git hub project
-$git push -u origin master
+$git push -u origin master   //// it is for own project as it is set as default
 
 Modified project will push on github project.
 

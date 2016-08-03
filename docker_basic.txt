@@ -1,0 +1,70 @@
+After proper installation of docker how to use======
+Use root directory for using docker
+
+#docker run -it fedora /bin/bash   //it will redirect to bash cell on fedora
+ like this => [root@9d0e59044d28 /]# 
+
+NB: ctl+p+q //redirect the shell prompt from docker to local host without terminate container
+	    //exit command terminate and exit
+
+#docker ps  //show all running container and < -a option show all with this>
+
+#docker images // show all images
+
+#docker attach <running container id> //prompt is go to this running container
+
+#docker top <container id> //show the running process on thee container
+
+#docker inspect <container id> //Detail information about container
+
+#docker stop <container id>  //stop the running container
+
+To start a container
+
+#docker start <container id>
+#docker attach <container id>
+
+To restart a container
+
+#docker restart <container id>
+
+To remove a container
+#docker rm <container id>
+
+Create a docker file and build it:
+
+#vim Dockerfile
+
+_____________________________________________
+|#Ubuntu based hello world container         |
+|FROM ubuntu                                 |
+|MAINTAINER gobindaakhuli@gmail.com          |
+|RUN apt-get update                          |
+|CMD ["echo","Hello World"]                  |
+|____________________________________________|
+
+#docker build -t hello:0.1 .
+
+To run container of build image
+#docker run hello:0.1
+
+Push this image on dockerhub
+
+#docker tag <image id> gobindaakhuli/hello:1.0
+#docker push gobindaakhuli/hello:1.0
+
+Remove existing container and images
+#docker ps -a //show all container
+#docker rm <containerid1> <container id 2> ... //it delete all the container
+#docker images //show all images
+#docker rmi <image id1> <image id 2> ...
+
+Pull the repo from docker hub
+#docker pull gobindaakhuli/hello:1.0
+
+
+
+
+
+
+

@@ -14,6 +14,6 @@ $git push -u origin master   //// it is for own project as it is set as default
 
 Modified project will push on github project.
 
-
+$git pull  //// It pull the modified project from server to local mechine marje with local file.
 
 $git status := It show the status of the local git file

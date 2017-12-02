@@ -17,3 +17,9 @@ Modified project will push on github project.
 $git pull  //// It pull the modified project from server to local mechine marje with local file.
 
 $git status := It show the status of the local git file
+
+$git branch  ////Show your current branch
+$git branch new-branch ////create a branch with name new-branch
+$git checkout new-branch ////Switch the branches from current to new-branch
+$git merge new-branch  ////marge the new-branch with current branch
+$git branch -d new-branch  //// delete the branch with name new-branch

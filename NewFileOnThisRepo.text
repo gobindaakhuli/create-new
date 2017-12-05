@@ -1,4 +1,15 @@
-----------Add a new file on this repo ----------------
+------------Add a new file on this repo ----------------------------------
+
 Step1: Go to working directory.
 Step2: Add new file e.g vi NewFileOnThisRepo.text
+Step3: git add .
+Step4: git commit -m <commit message>
+Step5: git push
 
+-------------Get the same file update it push it back to repo again--------
+
+Step1: git pull
+Step2: Open file in any file editor
+## Next Step ##### Same as Step3 to Step5 ########
+
+NB: In every step $git status Help us find current status of this repo. 
